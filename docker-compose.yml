@@ -6,7 +6,7 @@ services:
       context: .
       args:
         - DEV=true
-    command: 'python manage.py migrate'
+    command: 'python -m venv /py'
     ports:
       - "8000:8000"
     volumes:
