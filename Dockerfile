@@ -2,7 +2,9 @@ FROM python:3.9-alpine3.13
 
 EXPOSE 8000
 
-COPY ./app /app
+COPY ./profiles_api /app/profiles_api
+COPY ./profiles_project /app/profiles_project
+COPY ./manage.py /app/manage.py
 COPY ./requirements.txt /tmp/requirements.txt
 WORKDIR /app
 
